@@ -1,0 +1,52 @@
+@use "sass:map";
+html, body {
+  background-color: #a18cd1;
+  margin: 0px;
+  padding: 0px; }
+
+.container {
+  position: 'relative';
+  margin: auto;
+  justify-content: start;
+  line-height: 45px;
+  left: 20px; }
+
+.navbar-brand {
+  font-size: 30px;
+  color: #3580f0;
+  position: absolute;
+  left: 20px;
+  top: -25px; }
+
+.container > .navbar {
+  background-color: #ff9a9e;
+  width: 100%;
+  height: 50px; }
+
+.container > .navbar > .nav {
+  list-style: none;
+  position: relative;
+  margin: 45vh; }
+
+.container > .navbar > .nav > .nav-item {
+  display: inline; }
+
+.container > .navbar > .nav > .nav-item > .nav-link {
+  font-size: 21px;
+  text-decoration: none;
+  color: rgba(250, 250, 243, 0.966);
+  margin: 5px; }
+
+.jumbotron {
+  background-color: greenyellow;
+  width: 800px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  top: 10%; }
+
+h1, p {
+  position: relative;
+  top: 10vh;
+  left: 5px;
+  color: #f74343; }

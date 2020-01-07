@@ -1,0 +1,82 @@
+//global variable
+$primary : #a18cd1;
+$sucess : #84fab0;
+$danger : #ff9a9e;
+$silver: rgba(250, 250, 243, 0.966);
+
+@use "sass:map";
+
+$more-colors: ("success": #3ef368, "primary": #299ae6, "warning": #ffc107, "danger" : rgb(247, 67, 67));
+
+html,body {
+
+   background-color: $primary;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+.container {
+   
+   position: 'relative';
+   margin: auto;
+   justify-content: start;
+   line-height: 45px;
+   left: 20px;
+}
+
+.navbar-brand {
+
+   //local variable
+   $silver: rgb(53, 128, 240);
+   font-size: 30px;
+   color: $silver;
+   position: absolute;
+   left: 20px;
+   top: -25px;
+}
+
+.container > .navbar {
+
+   background-color: $danger;
+   width: 100%;
+   height: 50px;
+}
+
+.container > .navbar > .nav {
+
+    list-style: none;
+    position: relative;
+    margin: 45vh;
+}
+
+.container > .navbar > .nav > .nav-item {
+
+   display: inline;
+}
+
+
+.container > .navbar > .nav > .nav-item > .nav-link {
+
+   font-size: 21px;
+   text-decoration: none;
+   color: $silver;
+   margin: 5px;
+}
+
+.jumbotron {
+
+   background-color: greenyellow;
+   width: 800px;
+   height: 300px;
+   position: relative;
+   margin: auto;
+   top: 10%;
+}
+
+h1,p {
+   position: relative;
+   top: 10vh;
+   left: 5px;
+   color: map-get($more-colors,'danger' );
+}
